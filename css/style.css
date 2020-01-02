@@ -1,0 +1,413 @@
+/*    Vue des block        
+
+* {
+    border: 1px dashed red;
+}
+*/
+
+/* GLOBAL */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-image: url('../img/concrete_seamless.png');
+
+
+}
+
+header {
+    background-color: #554B49;
+
+
+
+}
+
+.hr {
+    border: 1px solid green;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.menu {
+
+    line-height: 1.5;
+    padding-right: 0px;
+
+}
+
+.menu ul {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+
+
+
+}
+
+nav ul li {
+    margin: 15px 0px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+
+
+
+}
+
+nav a {
+
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #FF9D00;
+}
+
+#logo {
+
+    margin: auto;
+    text-align: center;
+}
+
+#logo img {
+
+    width: 40%;
+    margin: 30px 0px;
+
+}
+
+main {
+
+
+    text-align: center;
+
+}
+
+.mainindex,
+.mainblog,
+.mainContact,
+.mainslider {
+    margin: auto;
+
+
+}
+
+.mainblog {}
+
+h1 {
+    color: #978B89;
+    text-align: center;
+
+}
+
+p {
+    color: #696969;
+}
+
+.washield {
+    height: 100px;
+}
+
+/*          Réalisation                  */
+
+.slider img {
+
+    margin: auto;
+    border: 1px solid green;
+
+    width: 100%;
+
+}
+
+#slider {
+    margin: 0px;
+
+}
+
+.hide {
+    display: none;
+    padding: 0px;
+
+}
+
+#toolbar-toggle {
+    color: black;
+
+}
+
+#toolbar-toggle:hover {
+    color: green;
+
+}
+
+#slider figcaption {
+    color: green;
+    font-size: 2rem;
+}
+
+.flex-btn {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    display: flex;
+
+}
+
+.flex-btn li {
+
+    width: 25%;
+
+}
+
+.flex-btn button {
+
+    background-color: transparent;
+    border: none;
+}
+
+.flex-btn button:hover {
+    /* Le focus est grossie de 25% */
+    -webkit-transform: scale(2.25);
+    /* Safari et Chrome */
+    -moz-transform: scale(2.25);
+    /* Firefox */
+    -ms-transform: scale(2.25);
+    /* Internet Explorer 9 */
+    -o-transform: scale(2.25);
+    /* Opera */
+    transform: scale(2.25);
+    color: green;
+}
+
+
+
+/*      Blog               */
+
+.contentBlog {
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    background-color: white;
+    margin: auto;
+    line-height: 1.5;
+
+
+}
+
+.contentBlog:hover {
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contentBlog h1,
+p {
+    padding: 20px;
+}
+
+
+/*      Commentaire          */
+
+#theComments article {
+    text-align: center;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    word-wrap: break-word;
+
+}
+
+#theComments {}
+
+
+#formComment {
+    margin-top: 30px;
+}
+
+#formComment ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px;
+    padding: 0;
+
+}
+
+#formComment li {
+    list-style: none;
+    margin: auto;
+
+}
+
+
+
+#formComment input,
+textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    margin: 20px 0px;
+
+}
+
+#formComment input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 1px dashed green;
+    /* Le focus est grossie de 25% */
+    -webkit-transform: scale(1.25);
+    /* Safari et Chrome */
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    -ms-transform: scale(1.25);
+    /* Internet Explorer 9 */
+    -o-transform: scale(1.25);
+    /* Opera */
+    transform: scale(1.25);
+}
+
+#formComment button {
+    color: green;
+    border: 2px solid green;
+    border-radius: 5%;
+    background-color: white;
+    padding: 15px 25px;
+    margin: 20px;
+}
+
+#formComment label {
+
+    padding: 3rem;
+}
+
+#btnComment {
+    color: green;
+    border: 2px solid green;
+    border-radius: 5%;
+    background-color: white;
+    padding: 15px 25px;
+
+}
+
+/*          Contact                   */
+
+/*      Contact perso      */
+
+.contactperso {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contactperso i {
+    font-size: 5rem;
+    color: green;
+
+}
+
+.contactperso p {
+    font-size: 2rem;
+    text-align: center;
+
+
+}
+
+/*      Map        */
+
+iframe {
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+/*  Footer     */
+
+.footer {
+
+    padding: 50px;
+    background-color: #554B49;
+    text-align: right;
+    color: white;
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        display: flex;
+        width: 100%;
+
+
+    }
+    #logo img {
+        width: 40%;
+    }
+    .menu li:hover {
+
+        animation-duration: 1s;
+        animation-name: bounceHover;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    @keyframes bounceHover {
+        from {
+            padding-top: 0px;
+        }
+
+        to {
+            padding-top: 20px;
+        }
+    }
+    .menu ul {
+
+
+        flex-direction: row;
+        margin-top: 2rem;
+
+
+
+    }
+    .menu ul li {
+        margin-left: 10rem;
+        text-align: center;
+    }
+
+
+    .mainblog {
+        width: 80%;
+
+    }
+
+    .mainslider {
+        width: 80%;
+
+    }
+    .mainslider img {
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    .mainindex iframe {
+        width: 80%;
+        height: 50rem;
+
+    }
+}
